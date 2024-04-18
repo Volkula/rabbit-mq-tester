@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 def load_config():
     load_dotenv()
 
-    username = os.getenv('RABBITMQ_USERNAME', 'rmq-user')
-    password = os.getenv('RABBITMQ_PASSWORD', 'pwd')
+    username = os.getenv('RABBITMQ_USERNAME', 'guest')
+    password = os.getenv('RABBITMQ_PASSWORD', 'guest')
     host = os.getenv('RABBITMQ_HOST', 'localhost')
     port = int(os.getenv('RABBITMQ_PORT', 5672))
     virtual_host = os.getenv('RABBITMQ_VIRTUAL_HOST', '/')
